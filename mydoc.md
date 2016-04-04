@@ -1,6 +1,10 @@
 # Table of Contents  
 [ ](#) 
  * [Create child theme to modify theme without losing code when the theme updated)as default](#create-child-theme-to-modify-theme-without-losing-code-when-the-theme-updated)  
+ * [Woocommerce send invoice and order ](#woocommerce-send-invoice-and-order) 
+ * [PayPal setup that display Credit card pay option ](#paypal-setup-that-display-credit-card-pay-option) 
+ * [Change the product image size display in the shop page ](#change-the-product-image-size-display-in-the-shop-page) 
+ * [To change the product display in shop page to 4 per row (default is 3 per row) ](#change-the-product-image-size-display-in-the-shop-page) 
  * [Align the Add to cart button on shop page ](#align-the-add-to-cart-button-on-shop-page) 
  * [Change the default sorting product in Shop page (to popular or price..ect)as default](#change-the-default-sorting-product-in-shop-page-to-popular-or-priceectas-default)  
  * [Add extra taxonomies install this pluggin “Toolset Types” ](#add-extra-taxonomies-install-this-pluggin-toolset-types) 
@@ -9,6 +13,7 @@
  * [Pop up tab at bottom](#pop-up-tab-at-bottom) 
  * [Slideshow with best rated product and best sell ](#slideshow-with-best-rated-product-and-best-sell)
  * [Ajax dropdown search ](#ajax-dropdown-search)
+
 
 
 # Create child theme to modify theme without losing code when the theme updated
