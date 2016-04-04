@@ -1,6 +1,5 @@
 **Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
 
-- [Create child theme to modify theme without losing code when the theme updated](#)
 - [Align the Add to cart button on shop page](#)
 - [Change the default sorting product in Shop page (to popular or price..ect)as default.](#)
 - [Add extra taxonomies install this pluggin “Toolset Types”](#)
@@ -9,6 +8,7 @@
 - [Pop up tab at bottom:](#)
 - [Slideshow with best rated product and best sell](#)
 - [Ajax dropdown search](#)
+
 # Create child theme to modify theme without losing code when the theme updated
 1. Create a folder named [your_current_theme_name]-child.
 2. Create 2 files functions.php and style.css.
