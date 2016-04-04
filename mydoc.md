@@ -85,7 +85,7 @@ To add extra taxomony to the product (city,store...) https://wordpress.org/plugi
 ```
 # Dropdown search as user typing the product name
 Use Dave's WordPress Live Search for dropdown as user typing. This pluggin added to the default search.This one search way smarter eg. if searching for noodle egg but type egg noodle still came with same result. https://wordpress.org/plugins/daves-wordpress-live-search/ .
-The search dropdown-box sometime overlay the search-textbox. Add the x-value in the setting to push the dropdown-box down.
+The search dropdown-box sometime overlay the search-textbox. Add the x-value in the setting to push the dropdown-box down. This plugin will added to the wordpress default search.
 # Pop up tab at bottom:
 Use Sticky Popup plugin. https://wordpress.org/plugins/sticky-popup/ 
 # Slideshow with best rated product and best sell 
