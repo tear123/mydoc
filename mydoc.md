@@ -1,12 +1,3 @@
-1. Blah
-
- ```bash
-$ echo $PATH
-```
-
-1. Foo blah
-1. Blah blah baz
-2. 
 # Create child theme to modify theme without losing code when the theme updated
 1. Create a folder named [your_current_theme_name]-child.
 2. Create 2 files functions.php and style.css.
