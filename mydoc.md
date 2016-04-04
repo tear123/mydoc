@@ -85,7 +85,8 @@ https://wordpress.org/plugins/woocommerce-product-slider/
 1. create a folder name js inside child theme folder and create a file name myjs.js inside js folder just created child-theme/js/. download the jquery file from https://jquery.com/download/ and rename it to jquery.js and put it inside child-theme/js/ folder.
 1. paste this code into the functions.php inside child-theme folder. these 2 functions use to create a search form and load the 2 js files myjs.js and jquery.js .
 1. open the db_connect.php file and paste this code. this code is use to connect to the databse. change variable value to match the database auth.
-```bash
+
+ ```bash
 <?php 
   $servername = "localhost";
   $username = "root";
