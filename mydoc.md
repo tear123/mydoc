@@ -1,5 +1,6 @@
 ##### Table of Contents  
 [Headers](#Align the Add to cart button on shop page)  
+<a name="Align the Add to cart button on shop page"/>
 
 # Create child theme to modify theme without losing code when the theme updated
 1. Create a folder named [your_current_theme_name]-child.
