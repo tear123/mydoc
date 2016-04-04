@@ -1,13 +1,5 @@
-**Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
-
-- [Align the Add to cart button on shop page](#)
-- [Change the default sorting product in Shop page (to popular or price..ect)as default.](#)
-- [Add extra taxonomies install this pluggin “Toolset Types”](#)
-- [Separate the account and reg/login page and add  logout](#)
-- [Dropdown search as user typing the product name](#)
-- [Pop up tab at bottom:](#)
-- [Slideshow with best rated product and best sell](#)
-- [Ajax dropdown search](#)
+##### Table of Contents  
+[Headers](#Align the Add to cart button on shop page)  
 
 # Create child theme to modify theme without losing code when the theme updated
 1. Create a folder named [your_current_theme_name]-child.
