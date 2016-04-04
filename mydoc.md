@@ -96,7 +96,8 @@ https://wordpress.org/plugins/woocommerce-product-slider/
   ?>
 ```
 1. open the fetch_data.php file and paste this code. this file will populate the next dropdown according to what is selected on the upper level. 
-```
+
+ ```bash
 <?php
  include 'db_connect.php'; 
      $string = '';
@@ -184,7 +185,8 @@ $strgetstoreid = "Select term_id From wp_terms Where slug='".$storeslug."'";
 ?>
 ```
 1. open myjs.js file and paste this code. this code handle search function and send the value selected from dropdown to fetch-data.php to display the data on next dropdown.
-```
+
+ ```bash
  var city = document.getElementById("my_city");
  var cityoption;
  var suburb = document.getElementById("suburb");
