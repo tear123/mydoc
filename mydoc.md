@@ -118,7 +118,10 @@ https://wordpress.org/plugins/woocommerce-product-slider/
 if(isset($_POST['cityid']))
 {
     $cityid = $_POST['cityid'];
-    $strSQL = "Select term_id From wp_term_taxonomy Where count !=0 AND parent=".$cityid;
+    if($cityid==0){
+       echo "<option value='0'>All Suburb</option>";
+    }else{
+       $strSQL = "Select term_id From wp_term_taxonomy Where count !=0 AND parent=".$cityid;
     $query = mysqli_query($conn, $strSQL);
      while($row=mysqli_fetch_array($query))
      {
@@ -136,12 +139,14 @@ if(isset($_POST['cityid']))
      {
        echo "<option value='".$row['slug']."'>".$row['name']."</option>";
      }
-     unset($_POST['cityid']);
+         
+    }
+    unset($_POST['cityid']);
+   
 }
 else if(isset($_POST['suburbslug']))
 {
-     $suburbslug=$_POST['suburbslug'];
-    
+   $suburbslug=$_POST['suburbslug'];
    $strgetsuburbid = "Select term_id From wp_terms Where slug='".$suburbslug."'";
    $querygetsuburbid = mysqli_query($conn, $strgetsuburbid);
 
@@ -167,20 +172,19 @@ else if(isset($_POST['suburbslug']))
      }
      unset($_POST['suburbslug']);
 }else{
-
-$storeslug=$_POST['storeslug'];
-
-$strgetstoreid = "Select term_id From wp_terms Where slug='".$storeslug."'";
-   $querygetstoreid = mysqli_query($conn, $strgetstoreid);
-
+    $storeslug=$_POST['storeslug'];
+    if(is_numeric($storeslug)) {
+       echo "<option value='0'>All Category</option>";
+    }else{
+       $strgetstoreid = "Select term_id From wp_terms Where slug='".$storeslug."'";
+    $querygetstoreid = mysqli_query($conn, $strgetstoreid);
     while($row=mysqli_fetch_array($querygetstoreid))
      {
       $storeid=$row['term_id'];
      }
     $strSQL = "Select term_id From wp_term_taxonomy Where parent='".$storeid."'AND count !=0";
     $query = mysqli_query($conn, $strSQL);
-     
-     while($row=mysqli_fetch_array($query))
+    while($row=mysqli_fetch_array($query))
      {
        $string .= $row[$i].',';
      }
@@ -193,7 +197,8 @@ $strgetstoreid = "Select term_id From wp_terms Where slug='".$storeslug."'";
      {
        echo "<option value='".$row['slug']."'>".$row['name']."</option>";
      }
-     unset($_POST['storeslug']);
+    }
+        unset($_POST['storeslug']);
 }
 ?>
 ```
