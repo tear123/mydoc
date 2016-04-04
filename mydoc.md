@@ -12,7 +12,7 @@ $ echo $PATH
 2. Create 2 files functions.php and style.css.
 3. Paste this code on style.css file and change the Template name to the same as your theme name.
 
-```apache
+  ```bash
     /**
     * Theme Name: [your_current_theme_name] Child
     * Theme URI: http://www.getmotopress.com/themes/emmet
@@ -23,8 +23,8 @@ $ echo $PATH
     */
 ```
 
-4. Any new style and php codes will go to style.css and functions.php in child theme folder from now.
-5. More info https://codex.wordpress.org/Child_Themes 
+1. Any new style and php codes will go to style.css and functions.php in child theme folder from now.
+1. More info https://codex.wordpress.org/Child_Themes 
 # Woocommerce send invoice and order
 For Woocommerce to send invoice to customer and order to owner, needed to change the email under Woocommerce Setting > Email > Email Sender Options - "From" Address to wordpress@yourdomain.com (yourdomain is whatever your domain is).
 # PayPal setup that display Credit card pay option 
