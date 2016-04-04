@@ -28,6 +28,7 @@
 
 1. Any new style and php codes will go to style.css and functions.php in child theme folder from now.
 1. More info https://codex.wordpress.org/Child_Themes .
+
 # Woocommerce send invoice and order
 For Woocommerce to send invoice to customer and order to owner, needed to change the email under Woocommerce Setting > Email > Email Sender Options - "From" Address to wordpress@yourdomain.com (yourdomain is whatever your domain is).
 # PayPal setup that display Credit card pay option 
