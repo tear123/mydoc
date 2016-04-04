@@ -3,7 +3,7 @@
 2. Create 2 files functions.php and style.css.
 3. Paste this code on style.css file and change the Template name to the same as your theme name.
 
-```
+```apache
     /**
     * Theme Name: [your_current_theme_name] Child
     * Theme URI: http://www.getmotopress.com/themes/emmet
