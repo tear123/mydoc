@@ -2,7 +2,7 @@
 1. Create a folder named [your_current_theme_name]-child.
 2. Create 2 files functions.php and style.css.
 3. Paste this code on style.css file and change the Template name to the same as your theme name.
-    ```
+```
     /**
     * Theme Name: [your_current_theme_name] Child
     * Theme URI: http://www.getmotopress.com/themes/emmet
@@ -11,7 +11,7 @@
     * Template: [your_current_theme_name]
     * Domain Path: /languages/
     */
-    ```
+```
 4. Any new style and php codes will go to style.css and functions.php in child theme folder from now.
 5. More info https://codex.wordpress.org/Child_Themes 
 # Woocommerce send invoice and order
