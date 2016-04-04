@@ -66,7 +66,7 @@ The add to cart button on product may not align with other add to cart button on
 # Change the default sorting product in Shop page (to popular or price..ect)as default.
 Woocommerce setting> product > display tab > change Default Product Sorting.
 # Add extra taxonomies install this pluggin “Toolset Types”
-To add extra taxomony to the product (city,store...) https://wordpress.org/plugins/types/ 
+To add extra taxomony to the product (city,store...) https://wordpress.org/plugins/types/ . after installed, click Types> taxnomy on the menu on the left to add new taxnomy. 
 # Separate the account and reg/login page and add  logout
 1.	Create 2 menu with woocommerce_my_acount shortcode. My account and reg/login
 2.	Add custom ccs name nav-login and nav-account.
