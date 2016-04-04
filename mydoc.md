@@ -81,11 +81,11 @@ https://wordpress.org/plugins/woocommerce-product-slider/
     
 # Ajax dropdown search
 1. create 2 files name db_connect.php and fetch_data.php inside child theme folder.
-2. install this plugin https://wordpress.org/plugins/woocommerce-products-filter/ to use for the seach url.
-3. create a folder name js inside child theme folder and create a file name myjs.js inside js folder just created child-theme/js/. download the jquery file from https://jquery.com/download/ and rename it to jquery.js and put it inside child-theme/js/ folder.
-4. paste this code into the functions.php inside child-theme folder. these 2 functions use to create a search form and load the 2 js files myjs.js and jquery.js .
-5. open the db_connect.php file and paste this code. this code is use to connect to the databse. change variable value to match the database auth.
-```sh
+1. install this plugin https://wordpress.org/plugins/woocommerce-products-filter/ to use for the seach url.
+1. create a folder name js inside child theme folder and create a file name myjs.js inside js folder just created child-theme/js/. download the jquery file from https://jquery.com/download/ and rename it to jquery.js and put it inside child-theme/js/ folder.
+1. paste this code into the functions.php inside child-theme folder. these 2 functions use to create a search form and load the 2 js files myjs.js and jquery.js .
+1. open the db_connect.php file and paste this code. this code is use to connect to the databse. change variable value to match the database auth.
+```bash
 <?php 
   $servername = "localhost";
   $username = "root";
@@ -94,7 +94,7 @@ https://wordpress.org/plugins/woocommerce-product-slider/
   $conn = new mysqli($servername, $username, $password,$dbname);
   ?>
 ```
-6. open the fetch_data.php file and paste this code. this file will populate the next dropdown according to what is selected on the upper level. 
+1. open the fetch_data.php file and paste this code. this file will populate the next dropdown according to what is selected on the upper level. 
 ```
 <?php
  include 'db_connect.php'; 
@@ -182,7 +182,7 @@ $strgetstoreid = "Select term_id From wp_terms Where slug='".$storeslug."'";
 }
 ?>
 ```
-7. open myjs.js file and paste this code. this code handle search function and send the value selected from dropdown to fetch-data.php to display the data on next dropdown.
+1. open myjs.js file and paste this code. this code handle search function and send the value selected from dropdown to fetch-data.php to display the data on next dropdown.
 ```
  var city = document.getElementById("my_city");
  var cityoption;
@@ -262,7 +262,7 @@ function search()
   }
 }
 ```
-8.Usage > paste this shortcode [show_my_search] to a post or page to display the search form.
+1. Usage > paste this shortcode [show_my_search] to a post or page to display the search form.
 
     
 
