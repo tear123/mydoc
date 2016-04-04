@@ -83,56 +83,6 @@ https://wordpress.org/plugins/woocommerce-product-slider/
 2. install this plugin https://wordpress.org/plugins/woocommerce-products-filter/ to use for the seach url.
 3. create a folder name js inside child theme folder and create a file name myjs.js inside js folder just created child-theme/js/. download the jquery file from https://jquery.com/download/ and rename it to jquery.js and put it inside child-theme/js/ folder.
 4. paste this code into the functions.php inside child-theme folder. these 2 functions use to create a search form and load the 2 js files myjs.js and jquery.js .
-
-```
-add_shortcode( 'show_my_search', 'mysearch' );
-function mysearch()
-{
-  	include 'db_connect.php'; 
-    $strSQL = "Select term_id From wp_term_taxonomy Where taxonomy='location' AND parent= 0 AND count !=0";
-    $query = mysqli_query($conn, $strSQL);
-    $string = '';
-    $i = 0; 
-    while($row=mysqli_fetch_array($query))
-    {
-       $string .= $row[$i].',';
-    }
-    $array=array_map('intval', explode(',', $string));
-    $array = implode("','",$array);
-    $strSQLcity = "Select name,term_id From wp_terms Where term_id IN ('".$array."')";
-    $query_city = mysqli_query($conn, $strSQLcity);
-    $output  ="<label class='searchlable' for='city'>City</label>";
-    $output  .="<select class='searchdropdown' id='my_city' onchange='fetch_suburb(this.value);'>";
-    $output .= "<option value='0'>All City</option>";
-    while($row=mysqli_fetch_array($query_city))
-     {
-       $output .= "<option value='".$row['term_id']."'>".$row['name']."</option>";
-     }
-    $output .= "</select> ";
-	 	$output  .="<label class='searchlable'  id='lblsuburb' for='suburb'>Suburb</label>";
-	 	$output .="<select class='searchdropdown'  id='suburb' onchange='fetch_store(this.value);'>";
-	 	$output .= "<option value='0'>All suburb</option>";
-	  $output .="</select>";  
-	  $output  .="<label class='searchlable'  id='lblstore' for='store'>Store</label>";
-	  $output .="<select class='searchdropdown'  id='store' onchange='fetch_category(this.value);'>";
-	  $output .= "<option value='0'>All Store</option>";
-	  $output .="</select>"; 
-	  $output  .="<label class='searchlable'  id='lblcat'>Category</label>";
-	  $output .="<select class='searchdropdown'  id='category' >";
-	  $output .= "<option value='0'>All Category</option>";
-	  $output .="</select><br>"; 
-	  $output .="<button id='btnseach' onclick='search();' type='button'>Search</button> ";
-
-    return $output;
-
-}
-add_action( 'wp_enqueue_scripts', 'emmet_script' );
-function emmet_script()
-{
-	wp_enqueue_script( 'myjs',  get_template_directory_uri() . '/js/myjs.js',   array('jquery'),   '1.0', true );
-  wp_enqueue_script( 'jquery.js',  get_template_directory_uri() . '/js/jquery.js',   array('jquery'),   '1.0', true );
-}
-```
 5. open the db_connect.php file and paste this code. this code is use to connect to the databse. change variable value to match the database auth.
 ```
 <?php 
