@@ -230,7 +230,7 @@ $strgetstoreid = "Select term_id From wp_terms Where slug='".$storeslug."'";
 }
 ?>
 ```
-7. open myjs.js file and paste this code. this code handle search function and send the value selected from dropdown to fetch-data.php to display the data on next dropdown.
+77. open myjs.js file and paste this code. this code handle search function and send the value selected from dropdown to fetch-data.php to display the data on next dropdown.
 ```
  var city = document.getElementById("my_city");
  var cityoption;
