@@ -1,9 +1,19 @@
 # Table of Contents  
+[ ](#) 
+ * [Create child theme to modify theme without losing code when the theme updated)as default](#create-child-theme-to-modify-theme-without-losing-code-when-the-theme-updated)  
+ * [Align the Add to cart button on shop page ](#align-the-add-to-cart-button-on-shop-page) 
  * [Change the default sorting product in Shop page (to popular or price..ect)as default](#change-the-default-sorting-product-in-shop-page-to-popular-or-priceectas-default)  
+  * [Add extra taxonomies install this pluggin “Toolset Types” ](#add-extra-taxonomies-install-this-pluggin-toolset-types) 
+  * [Separate the account and reg/login page and add logout](#separate-the-account-and-reglogin-page-and-add--logout) 
+  * [Dropdown search as user typing the product name](#dropdown-search-as-user-typing-the-product-name) 
+  * [Pop up tab at bottom](#pop-up-tab-at-bottom) 
+  * [Slideshow with best rated product and best sell ](#slideshow-with-best-rated-product-and-best-sell)
+  * [Ajax dropdown search ](#ajax-dropdown-search)
+
 
 
 # Create child theme to modify theme without losing code when the theme updated
-1. Create a folder named [your_current_theme_name]-child.
+### 1. Create a folder named [your_current_theme_name]-child.
 2. Create 2 files functions.php and style.css.
 3. Paste this code on style.css file and change the Template name to the same as your theme name.
   ```bash
