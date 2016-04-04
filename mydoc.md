@@ -1,5 +1,5 @@
 ##### Table of Contents  
-[Create child theme to modify theme without losing code when the theme updated](#headers)  
+[Change the default sorting product in Shop page (to popular or price..ect)as default](#Change the default sorting product in Shop page (to popular or price..ect)as default)  
 
 # Create child theme to modify theme without losing code when the theme updated
 1. Create a folder named [your_current_theme_name]-child.
