@@ -11,9 +11,8 @@
  * [Ajax dropdown search ](#ajax-dropdown-search)
 
 
-
 # Create child theme to modify theme without losing code when the theme updated
-#### 1. Create a folder named [your_current_theme_name]-child.
+1. Create a folder named [your_current_theme_name]-child.
 2. Create 2 files functions.php and style.css.
 3. Paste this code on style.css file and change the Template name to the same as your theme name.
   ```bash
