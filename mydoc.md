@@ -1,5 +1,5 @@
 # Table of Contents  
- * [Change the default sorting product in Shop page (to popular or price..ect)as default](#change-the-default-sorting-product-in-shop-page-to-popular-or-priceectas-default)  
+  	- [Change the default sorting product in Shop page (to popular or price..ect)as default](#change-the-default-sorting-product-in-shop-page-to-popular-or-priceectas-default)  
 
 
 # Create child theme to modify theme without losing code when the theme updated
