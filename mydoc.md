@@ -349,7 +349,106 @@ function search()
 ```
 1. Usage > paste this shortcode [show_my_search] to a post or page to display the search form.
 
-    
+# Woocomerce facebook login
+use YITH WooCommerce Social Login
+
+https://wordpress.org/plugins/yith-woocommerce-social-login/
+
+# Get search keywork from Dave's WordPress Live Search save and display
+    NOTE : this is a continue from the dropdown search ajax 
+    https://github.com/tear123/mydoc/blob/master/mydoc.md#ajax-dropdown-search
+    go and create those folder and files first.
+1. go to wp-content\plugins\daves-wordpress-live-search/js/dwls-results.tpl and open it
+2. add thi javascript to the end of the code out site </ul> and change www.yourdoman.com to your domain 
+```
+        <script type="text/javascript">
+        $(document).ready(function () {
+                            $("#dwls_search_results li").click(function() { 
+                        var keyword=$(this).text().trim();
+                        var keyword_slug=keyword.replace(" ","-");
+                        //send keyword and check to see if need added or increase the count
+                        $.ajax({
+                        type: 'post',
+                        url: myurl()+'fetch_data.php',
+                        data: {keyword: keyword},
+                        success: function (response) {
+                                //alert("added");
+                                 window.location.href="www.yourdoman.com/product/"+keyword_slug+"/";
+                        }
+                       
+                });
+                        
+                });
+        });
+</script>
+```
+        
+  3. add this code to the theme functions.php
+  
+  ```
+   // get keywords from database
+function show_keywords()
+{
+    include 'db_connect.php'; 
+    $keyword_sql= "SELECT keyword FROM keyword_search ORDER BY count DESC LIMIT 10";
+    $query=mysqli_query($conn,$keyword_sql);
+    $output ="";
+   while($row=mysqli_fetch_array($query))
+   {
+      $output .="<a href='".$url."".str_replace(' ', '-', $row['keyword'])."'>".$row['keyword']."</a><br>";
+          
+   }
+    return $output;
+}
+  ```
+ 4. pase this function inside functions.php > this function use to retrieve the keywords from db and display it.
+ ```
+   // get keywords from database
+function show_keywords()
+{
+    include 'db_connect.php'; 
+    $keyword_sql= "SELECT keyword FROM keyword_search ORDER BY count DESC LIMIT 10";
+    $query=mysqli_query($conn,$keyword_sql);
+    $output ="";
+   while($row=mysqli_fetch_array($query))
+   {
+      $output .="<a href='".$url."".str_replace(' ', '-', $row['keyword'])."'>".$row['keyword']."</a><br>";
+          
+   }
+    return $output;
+}
+ ```
+ 5. add this code to the fetch-data.php inside the if else loop
+```
+else if(isset($_POST['keyword'])){
+    $keyword=$_POST['keyword'];
+    $keyword_sql= "SELECT * FROM keyword_search WHERE `keyword`='".$keyword."'";
+    $query= mysqli_query($conn, $keyword_sql);
+    //$keyword_sql="";
+    if ($query && mysqli_num_rows($query) > 0){
+        //keyword exist > ++count
+         //$add_keyword_sql= "INSERT INTO keyword_search(keyword,count) VALUES ('".$keyword."',1)";
+        $keyword_sql="UPDATE keyword_search SET count=count+1 WHERE `keyword` ='".$keyword."'";
+         //$query= mysqli_query($conn, $add_keyword_sql);
+         echo "update";
+    }else{
+        //keyowrd not exist > add
+        $keyword_sql= "INSERT INTO keyword_search(keyword,count) VALUES ('".$keyword."',1)";
+        echo "add new";
+    }
+    $runquery=mysqli_query($conn, $keyword_sql);
+    echo "end";
+    unset($_POST['keyword']);
+}
+```
+6. add this code to the myjs.js file. replace  www.yourdomain.com iwth your domain
+```
+function myurl()
+{
+  var url="www.yourdomain.com/wp-content/themes/sparkling-child/";
+  return url;
+}
+```
 
 
 
