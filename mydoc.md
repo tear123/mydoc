@@ -362,7 +362,7 @@ https://wordpress.org/plugins/yith-woocommerce-social-login/
 1. add thi javascript to the end of the code out site </ul> and change www.yourdoman.com to your domain 
 
   ```bash
-        <script type="text/javascript">
+  <script type="text/javascript">
         $(document).ready(function () {
                             $("#dwls_search_results li").click(function() { 
                         var keyword=$(this).text().trim();
@@ -381,7 +381,7 @@ https://wordpress.org/plugins/yith-woocommerce-social-login/
                         
                 });
         });
-</script>
+  </script>
   ```
         
   1. add this code to the theme functions.php
