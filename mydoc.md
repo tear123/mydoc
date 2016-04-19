@@ -384,7 +384,7 @@ https://wordpress.org/plugins/yith-woocommerce-social-login/
   </script>
   ```
         
-  1. add this code to the theme functions.php
+  1. add this code to the theme functions.php.
   
   ```bash
    // get keywords from database
@@ -420,7 +420,7 @@ function show_keywords()
     return $output;
 }
   ```
- 1. add this code to the fetch-data.php inside the if else loop
+ 1. add this code to the fetch-data.php inside the if else loop.
  
   ```bash
 else if(isset($_POST['keyword'])){
@@ -444,7 +444,7 @@ else if(isset($_POST['keyword'])){
     unset($_POST['keyword']);
 }
   ```
-1. add this code to the myjs.js file. replace  www.yourdomain.com iwth your domain
+1. add this code to the myjs.js file. replace  www.yourdomain.com iwth your domain.
 
   ```bash
 function myurl()
