@@ -68,10 +68,11 @@ Woocommerce setting> product > display tab > change Default Product Sorting.
 # Add extra taxonomies install this pluggin “Toolset Types”
 To add extra taxomony to the product (city,store...) https://wordpress.org/plugins/types/ . after installed, click Types> taxnomy on the menu on the left to add new taxnomy. 
 # Separate the account and reg/login page and add  logout
-1.	Create 2 menu with woocommerce_my_acount shortcode. My account and reg/login
+1.	Create 2 menu with [woocommerce_my_account[ shortcode. My account and reg/login
 2.	Add custom ccs name nav-login and nav-account.
 3.	Make a custom link menu with a link of  /my-account/customer-logout  and name log out.
 4.	Then add this code to function to display the menu depend on user have login or not.
+5.	NOTE : thi code my not work with different theme cause they got different menu css style. eg. menu that use list item for menu then instead of .nav-login { display: none; }  try change it to li.nav-login a { display: none; }
 ```
     add_action('wp_head','jg_user_nav_visibility');
     function jg_user_nav_visibility() {
