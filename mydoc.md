@@ -360,10 +360,10 @@ https://wordpress.org/plugins/yith-woocommerce-social-login/
     go and create those folder and files first.
 1. go to wp-content\plugins\daves-wordpress-live-search/js/dwls-results.tpl and open it
 1. add thi javascript to the end of the code out site </ul> and change www.yourdomain.com to your domain 
+	```bash
+	```
 
-  ```bash
 
-  ```
         
   1. add this code to the theme functions.php.
   
