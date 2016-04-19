@@ -361,11 +361,29 @@ https://wordpress.org/plugins/yith-woocommerce-social-login/
 1. go to wp-content\plugins\daves-wordpress-live-search/js/dwls-results.tpl and open it
 1. add thi javascript to the end of the code out site </ul> and change www.yourdomain.com to your domain 
 	```bash
+	  <script type="text/javascript">
+        $(document).ready(function () {
+                            $("#dwls_search_results li").click(function() { 
+                        var keyword=$(this).text().trim();
+                        var keyword_slug=keyword.replace(" ","-");
+                        //send keyword and check to see if need added or increase the count
+                        $.ajax({
+                        type: 'post',
+                        url: myurl()+'fetch_data.php',
+                        data: {keyword: keyword},
+                        success: function (response) {
+                                //alert("added");
+                                 window.location.href="www.yourdomain.com/product/"+keyword_slug+"/";
+                        }
+                       
+                });
+                        
+                });
+        });
+  </script>
 	```
 
-
-        
-  1. add this code to the theme functions.php.
+1. add this code to the theme functions.php.
   
   ```bash
    // get keywords from database
@@ -401,7 +419,7 @@ function show_keywords()
     return $output;
 }
   ```
- 1. add this code to the fetch-data.php inside the if else loop.
+1. add this code to the fetch-data.php inside the if else loop.
  
   ```bash
 else if(isset($_POST['keyword'])){
