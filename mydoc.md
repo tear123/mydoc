@@ -360,7 +360,8 @@ https://wordpress.org/plugins/yith-woocommerce-social-login/
     go and create those folder and files first.
 1. go to wp-content\plugins\daves-wordpress-live-search/js/dwls-results.tpl and open it
 2. add thi javascript to the end of the code out site </ul> and change www.yourdoman.com to your domain 
-```
+
+  ```
         <script type="text/javascript">
         $(document).ready(function () {
                             $("#dwls_search_results li").click(function() { 
@@ -381,7 +382,7 @@ https://wordpress.org/plugins/yith-woocommerce-social-login/
                 });
         });
 </script>
-```
+ ```
         
   3. add this code to the theme functions.php
   
