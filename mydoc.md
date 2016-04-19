@@ -359,29 +359,10 @@ https://wordpress.org/plugins/yith-woocommerce-social-login/
     https://github.com/tear123/mydoc/blob/master/mydoc.md#ajax-dropdown-search
     go and create those folder and files first.
 1. go to wp-content\plugins\daves-wordpress-live-search/js/dwls-results.tpl and open it
-1. add thi javascript to the end of the code out site </ul> and change www.yourdoman.com to your domain 
+1. add thi javascript to the end of the code out site </ul> and change www.yourdomain.com to your domain 
 
   ```bash
-  <script type="text/javascript">
-        $(document).ready(function () {
-                            $("#dwls_search_results li").click(function() { 
-                        var keyword=$(this).text().trim();
-                        var keyword_slug=keyword.replace(" ","-");
-                        //send keyword and check to see if need added or increase the count
-                        $.ajax({
-                        type: 'post',
-                        url: myurl()+'fetch_data.php',
-                        data: {keyword: keyword},
-                        success: function (response) {
-                                //alert("added");
-                                 window.location.href="www.yourdoman.com/product/"+keyword_slug+"/";
-                        }
-                       
-                });
-                        
-                });
-        });
-  </script>
+
   ```
         
   1. add this code to the theme functions.php.
