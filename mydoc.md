@@ -359,9 +359,9 @@ https://wordpress.org/plugins/yith-woocommerce-social-login/
     https://github.com/tear123/mydoc/blob/master/mydoc.md#ajax-dropdown-search
     go and create those folder and files first.
 1. go to wp-content\plugins\daves-wordpress-live-search/js/dwls-results.tpl and open it
-2. add thi javascript to the end of the code out site </ul> and change www.yourdoman.com to your domain 
+1. add thi javascript to the end of the code out site </ul> and change www.yourdoman.com to your domain 
 
-  ```
+  ```bash
         <script type="text/javascript">
         $(document).ready(function () {
                             $("#dwls_search_results li").click(function() { 
@@ -384,9 +384,9 @@ https://wordpress.org/plugins/yith-woocommerce-social-login/
 </script>
  ```
         
-  3. add this code to the theme functions.php
+  1. add this code to the theme functions.php
   
-  ```
+  ```bash
    // get keywords from database
 function show_keywords()
 {
@@ -402,8 +402,9 @@ function show_keywords()
     return $output;
 }
   ```
- 4. pase this function inside functions.php > this function use to retrieve the keywords from db and display it.
- ```
+ 1. pase this function inside functions.php > this function use to retrieve the keywords from db and display it.
+ 
+  ```bash
    // get keywords from database
 function show_keywords()
 {
@@ -419,8 +420,9 @@ function show_keywords()
     return $output;
 }
  ```
- 5. add this code to the fetch-data.php inside the if else loop
-```
+ 1. add this code to the fetch-data.php inside the if else loop
+ 
+  ```bash
 else if(isset($_POST['keyword'])){
     $keyword=$_POST['keyword'];
     $keyword_sql= "SELECT * FROM keyword_search WHERE `keyword`='".$keyword."'";
@@ -442,14 +444,15 @@ else if(isset($_POST['keyword'])){
     unset($_POST['keyword']);
 }
 ```
-6. add this code to the myjs.js file. replace  www.yourdomain.com iwth your domain
-```
+1. add this code to the myjs.js file. replace  www.yourdomain.com iwth your domain
+
+  ```bash
 function myurl()
 {
   var url="www.yourdomain.com/wp-content/themes/sparkling-child/";
   return url;
 }
-```
+  ```
 
 
 
