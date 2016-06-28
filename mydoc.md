@@ -13,6 +13,7 @@
  * [Pop up tab at bottom](#pop-up-tab-at-bottom) 
  * [Slideshow with best rated product and best sell ](#slideshow-with-best-rated-product-and-best-sell)
  * [Ajax dropdown search ](#ajax-dropdown-search)
+ * [Wordpress error : Request URL / not found on wampserver fix ](#ajax-dropdown-search)
 
 
 
@@ -452,6 +453,7 @@ function myurl()
   return url;
 }
   ```
-
+# Fix request url not found on wampserver:
+Left click on wampserver icon > Apache > Apache modules > tick rewrite_module
 
 
