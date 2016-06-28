@@ -13,7 +13,7 @@
  * [Pop up tab at bottom](#pop-up-tab-at-bottom) 
  * [Slideshow with best rated product and best sell ](#slideshow-with-best-rated-product-and-best-sell)
  * [Ajax dropdown search ](#ajax-dropdown-search)
- * [Wordpress error : Request URL / not found on wampserver fix ](#https://github.com/tear123/mydoc/blob/master/mydoc.md#fix-request-url-not-found-on-wampserver)
+ * [Wordpress error : Request URL / not found on wampserver fix ](#fix-request-url-not-found-on-wampserver)
 
 
 
