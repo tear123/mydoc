@@ -14,6 +14,7 @@
  * [Slideshow with best rated product and best sell ](#slideshow-with-best-rated-product-and-best-sell)
  * [Ajax dropdown search ](#ajax-dropdown-search)
  * [Wordpress error : Request URL / not found on wampserver fix ](#fix-request-url-not-found-on-wampserver)
+ * [Display product cat with thumbnail](#display-product-cat-on-widget-with-img)
 
 
 
