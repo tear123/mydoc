@@ -458,4 +458,9 @@ function myurl()
 Left click on wampserver icon > Apache > Apache modules > tick rewrite_module
 # Display product cat on widget with img:
 Use pluggin : https://wordpress.org/plugins/xo10-woocommerce-categories-widget/ 
+# Css stylesheet for mobile ver
+Add this code to css
+ ```css
+ @media screen and (max-width: 885px) {}
+ ```css
 
