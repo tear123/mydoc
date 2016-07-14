@@ -460,11 +460,11 @@ Left click on wampserver icon > Apache > Apache modules > tick rewrite_module
 Use pluggin : https://wordpress.org/plugins/xo10-woocommerce-categories-widget/ 
 # Css stylesheet for mobile ver
 Add this code to css
- ```bash
+ ```css
  @media screen and (max-width: 885px) {}
  ```
 Add css style for mobile inside the {} + !important after the styling
- ```bash
+ ```css
  .col-md-4{
         margin-top: 5%;
         width: 100% !important;  
