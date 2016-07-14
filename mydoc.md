@@ -462,5 +462,13 @@ Use pluggin : https://wordpress.org/plugins/xo10-woocommerce-categories-widget/
 Add this code to css
  ```css
  @media screen and (max-width: 885px) {}
+```css
+Add css style for mobile inside the {} + !important after the styling
  ```css
+ .col-md-4{
+        margin-top: 5%;
+        width: 100% !important;  
+    }
+```css
+
 
