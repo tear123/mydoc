@@ -1,6 +1,6 @@
 # Table of Contents  
 [ ](#) 
- * [Create child theme to modify theme without losing code when the theme updated] (#create-child-theme-to-modify-theme-without-losing-code-when-the-theme-updated)  
+ * [Create child theme to modify theme without losing code when the theme updated](#create-child-theme-to-modify-theme-without-losing-code-when-the-theme-updated)  
  * [Woocommerce send invoice and order ](#woocommerce-send-invoice-and-order) 
  * [PayPal setup that display Credit card pay option ](#paypal-setup-that-display-credit-card-pay-option) 
  * [Change the product image size display in the shop page ](#change-the-product-image-size-display-in-the-shop-page) 
