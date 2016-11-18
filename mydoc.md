@@ -471,11 +471,58 @@ Add css style for mobile inside the {} + !important after the styling
         width: 100% !important;  
     }
  ```
- Sticky fb box sidebar
+Sticky fb box sidebar
  ```css
  	Aspexi Facebook Like Box Slider
 	https://wordpress.org/plugins/aspexi-facebook-like-box/
 
  ```
+Exit popup when user leave the site
+  ```css
+	Yeloni Exit Popup
+ ```
+Set font styling and color for whole site (h1, h2, p….)
+  ```css
+	Plugin: Easy Google fonts
+	Link: https://en-nz.wordpress.org/plugins/easy-google-fonts/
+ ```
+Popup display when scroll down
+  ```css
+	Scroll Triggered Boxes
+ ```
+Increase website speed
+ Install WP Fastest Cache pluggin
+ 
+  ```css
+	Enable Browser Caching
+ ```
+ Edit .htaccess by adding
+   ```css
+	## EXPIRES CACHING ##
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType image/jpg "access 1 year"
+ExpiresByType image/jpeg "access 1 year"
+ExpiresByType image/gif "access 1 year"
+ExpiresByType image/png "access 1 year"
+ExpiresByType text/css "access 1 month"
+ExpiresByType text/html "access 1 month"
+ExpiresByType application/pdf "access 1 month"
+ExpiresByType text/x-javascript "access 1 month"
+ExpiresByType application/x-shockwave-flash "access 1 month"
+ExpiresByType image/x-icon "access 1 year"
+ExpiresDefault "access 1 month"
+</IfModule>
+## EXPIRES CACHING ##
 
-
+<IfModule mod_gzip.c>
+mod_gzip_on Yes
+mod_gzip_dechunk Yes
+mod_gzip_item_include file \.(html?|txt|css|js|php|pl)$
+mod_gzip_item_include handler ^cgi-script$
+mod_gzip_item_include mime ^text/.*
+mod_gzip_item_include mime ^application/x-javascript.*
+mod_gzip_item_exclude mime ^image/.*
+mod_gzip_item_exclude rspheader ^Content-Encoding:.*gzip.*
+</IfModule>
+ ```	
