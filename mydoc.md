@@ -17,12 +17,12 @@
  * [Wordpress error : Request URL / not found on wampserver fix ](#fix-request-url-not-found-on-wampserver)
  * [Display product cat with thumbnail](#display-product-cat-on-widget-with-img)
  * [Css stylesheet for mobile ver](#css-stylesheet-for-mobile-ver)
-* [Add css style for mobile inside the {} + !important after the styling](#add-css-style-for-mobile-inside-the---important-after-the-styling)
-* [Sticky fb box sidebar](#sticky-fb-box-sidebar)
-* [Exit popup when user leave the site](#exit-popup-when-user-leave-the-site)
-* [Set font styling and color for whole site (h1, h2, p….)](#set-font-styling-and-color-for-whole-site-h1-h2-p)
-* [Popup display when scroll down](#popup-display-when-scroll-down)
-* [Increase website speed](#increase-website-speed)
+ * [Add css style for mobile inside the {} + !important after the styling](#add-css-style-for-mobile-inside-the---important-after-the-styling)
+ * [Sticky fb box sidebar](#sticky-fb-box-sidebar)
+ * [Exit popup when user leave the site](#exit-popup-when-user-leave-the-site)
+ * [Set font styling and color for whole site (h1, h2, p….)](#set-font-styling-and-color-for-whole-site-h1-h2-p)
+ * [Popup display when scroll down](#popup-display-when-scroll-down)
+ * [Increase website speed](#increase-website-speed)
 
 
 
