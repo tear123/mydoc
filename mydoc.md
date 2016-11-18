@@ -471,5 +471,11 @@ Add css style for mobile inside the {} + !important after the styling
         width: 100% !important;  
     }
  ```
+ Sticky fb box sidebar
+ ```css
+ 	Aspexi Facebook Like Box Slider
+	https://wordpress.org/plugins/aspexi-facebook-like-box/
+
+ ```
 
 
