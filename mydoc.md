@@ -496,7 +496,8 @@ Add this code to css
   ```css
 	Step 1:
 
-If you’ve already installed W3 Total Cache simply head over to WordPress Dashboard » Performance » General Settings and Enable “Browser cache“
+If you’ve already installed W3 Total Cache simply head over to 
+WordPress Dashboard » Performance » General Settings and Enable “Browser cache“
 
 Enable browser cache in w3 total cache
 
