@@ -491,10 +491,65 @@ Add this code to css
 	Scroll Triggered Boxes
  ```
 # Increase website speed
- Install WP Fastest Cache pluggin
+ Install W3 Total Cache pluggin
  
   ```css
-	Enable Browser Caching
+	Step 1:
+
+If you’ve already installed W3 Total Cache simply head over to WordPress Dashboard » Performance » General Settings and Enable “Browser cache“
+
+Enable browser cache in w3 total cache
+
+Step 2:
+
+Go to performance >> Browser Cache. Apply the following settings.
+Browser Cache – General Settings
+
+    Enable “Set Last-Modified header”
+    Enable “Set expires header”
+    Enable “Set cache control header”
+    Disable “Set entity tag (eTag)”
+    Enable “Set W3 Total Cache header”
+    Enable “HTTP (gzip) compression”
+    Disable “Prevent caching of objects after settings change”
+    Disable “Do not process 404 errors for static objects“
+
+Browser Cache – CSS & JS
+
+    Enable “Set Last-Modified header”
+    Enable “Set expires header”
+    Expires header lifetime – 31536000 seconds (1 year)
+    Enable “Set cache control header”
+    Cache Control Policy: cache with max-age
+    Disable “Set entity tag (eTag)”
+    Enable “Set W3 Total Cache header”
+    Enable “HTTP (gzip) compression”
+    Disable “Prevent caching of objects after settings change “
+    Disable “Disable cookies for static files “
+
+Browser Cache – HTML and XML
+
+    Enable “Set Last-Modified header”
+    Enable “Set expires header”
+    Expires header lifetime – 3600 seconds (1 hour)
+    Enable “Set cache control header”
+    Cache Control Policy: cache with max-age
+    Disable “Set entity tag (eTag)”
+    Enable “Set W3 Total Cache header”
+    Enable “HTTP (gzip) compression”
+
+Browser Cache – Media and other files
+
+    Enable “Set Last-Modified header”
+    Enable “Set expires header”
+    Expires header lifetime – 31536000 seconds (1 year)
+    Enable “Set cache control header”
+    Cache Control Policy – cache with max-age
+    Disable “Set the entity tag (eTag)”
+    Enable “Set W3 Total Cache header”
+    Enable “HTTP (gzip) compression”
+    Disable “Prevent caching of objects after settings change” 
+    Disable “Disable cookies for static files” 
  ```
  Edit .htaccess by adding
    ```css
