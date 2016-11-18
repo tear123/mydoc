@@ -464,33 +464,33 @@ Add this code to css
  ```css
  @media screen and (max-width: 885px) {}
  ```
-Add css style for mobile inside the {} + !important after the styling
+# Add css style for mobile inside the {} + !important after the styling
  ```css
  .col-md-4{
         margin-top: 5%;
         width: 100% !important;  
     }
  ```
-Sticky fb box sidebar
+# Sticky fb box sidebar
  ```css
  	Aspexi Facebook Like Box Slider
 	https://wordpress.org/plugins/aspexi-facebook-like-box/
 
  ```
-Exit popup when user leave the site
+# Exit popup when user leave the site
   ```css
 	Yeloni Exit Popup
  ```
-Set font styling and color for whole site (h1, h2, p….)
+# Set font styling and color for whole site (h1, h2, p….)
   ```css
 	Plugin: Easy Google fonts
 	Link: https://en-nz.wordpress.org/plugins/easy-google-fonts/
  ```
-Popup display when scroll down
+# Popup display when scroll down
   ```css
 	Scroll Triggered Boxes
  ```
-Increase website speed
+# Increase website speed
  Install WP Fastest Cache pluggin
  
   ```css
